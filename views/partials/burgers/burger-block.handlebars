@@ -1,7 +1,17 @@
-<li>
-	{{burger_name}}
-
-	<button class="change-devour" data-id="{{id}}" data-newdevour="{{devoured}}">
-		{{#if devoured}}Devoured It!{{else}}Spit it Up!{{/if}}
-	</button>
-</li>
+	
+<div class="card">
+	<div class="card-body">
+		<h5 class="card-title">{{burger_name}}</h5>
+	</div>
+	<div class="card-footer">
+		{{#if devoured}}
+		<button class="btn btn-success change-devour" data-id="{{id}}" data-newdevour="{{devoured}}">
+			Devoured It!
+		</button>
+		{{else}}
+		<button class="btn btn-warning change-devour" data-id="{{id}}" data-newdevour="{{devoured}}">
+			Spit it Up!
+		</button>
+		{{/if}}
+	</div>
+</div>
